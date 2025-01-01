@@ -1,0 +1,87 @@
+package com.example.services;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.Dto.TicketDto;
+import com.example.entities.Status;
+import com.example.entities.Ticket;
+import com.example.entities.Ticket;
+import com.example.repositories.TicketRepository;
+
+@Service
+public class TicketServieImpl implements TicketService {
+
+	@Autowired
+	TicketRepository ticketrepo;
+	
+	@Override
+	public TicketDto createTicket(TicketDto ticketdto) {
+		// TODO Auto-generated method stub
+		
+		Ticket ticket=new Ticket();
+		BeanUtils.copyProperties(ticketdto, ticket);
+		ticket.setCreatedatetime(LocalDateTime.now());
+		
+		if(Status.INPROGRESS) {
+			ticket.setStatus(Status.INPROGRESS);
+		}
+		
+		
+	     Ticket savedTicket= ticketrepo.save(ticket);
+	     
+	     ticketdto.setId(savedTicket.getId());
+	     ticketdto.setStatus(savedTicket.getStatus());
+	     ticketdto.setDatetime(savedTicket.getCreatedatetime());
+//	     Ticket insertedTicket=ticketrepo.findById(id).get();
+//	     TicketDto insertedDto=new TicketDto();
+//	     BeanUtils.copyProperties(insertedTicket, insertedDto);
+	     return ticketdto;		     
+	     
+	}
+
+	@Override
+	public TicketDto updateTicketDetails(TicketDto ticketdto,int id) {
+		// TODO Auto-generated method stub
+			Ticket ticket=ticketrepo.findById(id).get();
+			ticket.setStatus(Status.RESOLVED);
+			ticket.setResolutiondetails(ticketdto.getResolutiondetails());
+			ticket.setResolutiondatetime(LocalDateTime.now());
+			ticket.setId(id);
+			ticketrepo.save(ticket);
+			ticket=ticketrepo.findById(id).get();
+			 BeanUtils.copyProperties(ticket, ticketdto);
+			 return ticketdto;		
+		
+	}
+
+	@Override
+	public List<TicketDto> fetchAllOpen(String status) {
+	    List<Ticket> list = ticketrepo.getOpenTickets(status);
+	    List<TicketDto> dtolist = new ArrayList<>();
+
+	    list.forEach(item -> {
+	        TicketDto ticketDto = new TicketDto();
+	        BeanUtils.copyProperties(item, ticketDto);
+	        dtolist.add(ticketDto);
+	    });
+
+	    return dtolist;
+	}
+
+	@Override
+	public TicketDto fetchbyid(int id) {
+		// TODO Auto-generated method stub
+		Ticket ticket =ticketrepo.findById(id).get();
+	    TicketDto ticketdto= new TicketDto();
+	    BeanUtils.copyProperties(ticket, ticketdto);
+	    
+		return ticketdto;
+	}
+
+}

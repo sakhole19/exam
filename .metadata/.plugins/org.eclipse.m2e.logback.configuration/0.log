@@ -1,0 +1,48 @@
+2024-12-31 23:37:46,600 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-31 23:38:29,300 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Springboot1:0.0.1-SNAPSHOT @ C:\Users\AJ\Desktop\Springboot1\Springboot1\pom.xml.
+2024-12-31 23:38:32,293 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Springboot1/src/main/java
+2024-12-31 23:38:32,295 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Springboot1/src/main/resources
+2024-12-31 23:38:32,297 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Springboot1/src/main/resources
+2024-12-31 23:38:32,301 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Springboot1/src/test/java
+2024-12-31 23:38:32,302 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Springboot1/src/test/resources
+2024-12-31 23:38:33,088 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2024-12-31 23:38:37,675 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:38:37,709 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:38:37,716 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:39:14,011 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:39:14,011 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:39:14,014 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:39:33,927 [Worker-16: Launching Springboot1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:39:33,949 [Worker-16: Launching Springboot1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:39:33,956 [Worker-16: Launching Springboot1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:47:16,960 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:47:16,970 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:47:16,975 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:48:04,723 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:48:04,749 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:48:04,753 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:48:22,342 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:48:22,364 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:48:22,369 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:48:25,996 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:48:26,014 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:48:26,018 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:49:33,051 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:49:33,059 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:49:33,064 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:50:04,637 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:50:04,661 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:50:04,666 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:50:06,634 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:50:06,656 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:50:06,660 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:55:37,208 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:55:37,236 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:55:37,239 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:55:40,769 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:55:40,790 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:55:40,794 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-12-31 23:55:41,915 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-31 23:55:41,935 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-31 23:55:41,939 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-01 09:10:51,128 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

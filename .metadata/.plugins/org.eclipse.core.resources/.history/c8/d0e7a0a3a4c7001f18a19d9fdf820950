@@ -1,0 +1,53 @@
+package com.example.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.Dto.TicketDto;
+import com.example.entities.Status;
+import com.example.services.TicketService;
+
+@RestController
+@RequestMapping("/ticket")
+public class TicketController {
+
+	@Autowired
+	TicketService ticketService;
+	
+	@PostMapping("/insertTicket")
+	
+	// post some data 
+	// insert the data to database 
+	
+	public TicketDto insertTicket(@RequestBody TicketDto ticketDto) {
+		
+		return ticketService.createTicket(ticketDto);
+	}
+	
+	
+	@PatchMapping("/updateTicket/{id}")
+	public TicketDto updateTicket(@RequestBody TicketDto ticketdto,@PathVariable("id") int id) {
+		
+		return ticketService.updateTicketDetails(ticketdto,id);
+	}
+	
+	@GetMapping("/fetchOpenTicket")
+	public List<TicketDto> getAllOpenTickets(@RequestParam(value="status") Status status) {
+	    return ticketService.fetchAllOpen(status.name());
+	}
+
+	
+	@GetMapping("/fetchTicketById/{id}")
+	public TicketDto getById(@PathVariable("id")int id) {
+		  return ticketService.fetchbyid(id);
+	}
+}
